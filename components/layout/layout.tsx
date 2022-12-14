@@ -1,4 +1,4 @@
-import './layout.module.scss'
+import styles from './layout.module.scss'
 import Sidebar from './sidebar'
 
 type LayoutProps = {
@@ -7,9 +7,9 @@ type LayoutProps = {
 
 export default function Layout({ children }: LayoutProps) {
   return (
-    <>
+    <div className={styles.container}>
       <Sidebar />
       <main>{children}</main>
-    </>
+    </div>
   )
 }

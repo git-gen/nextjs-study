@@ -4,13 +4,4 @@ const nextConfig = {
   swcMinify: true,
 }
 
-const path = require('path');
-
-module.exports = {
-  sassOptions: {
-    includePaths: [path.join(__dirname, 'styles')],
-    prependData: `@import 'variables';`
-  }
-};
-
 module.exports = nextConfig

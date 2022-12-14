@@ -1,0 +1,19 @@
+@import '@variables';
+
+.container {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 16rem 1fr;
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    grid-template-columns: 4rem 1fr;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    grid-template-columns: 0 1fr;
+  }
+}

@@ -1,0 +1,35 @@
+@import '@variables';
+
+.container {
+  background-color: $white_A;
+}
+
+.top_title {
+  padding: 2rem 2rem;
+  margin-bottom: 2rem;
+  border-bottom: 0.1rem solid $gray_B;
+}
+
+.nav_list {
+  display: grid;
+  gap: 0.8rem;
+  grid-template-columns: 1fr;
+}
+
+.nav_item {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 2.4rem;
+  margin: 0 0.8rem;
+  border: 0.1rem solid;
+  border-radius: 0.4rem;
+}
+
+.item_icon {
+  margin-right: 1.2rem;
+}
+
+.item_text {
+  font-size: $font_size_s;
+}
